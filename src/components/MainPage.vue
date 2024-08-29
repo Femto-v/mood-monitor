@@ -1,10 +1,27 @@
 <script setup lang="ts">
-
+import "../css/background-animation.css";
 </script>
 
 <template>
   <!-- for margin only -->
   <div class="h-screen w-full grid place content-center gap-10">
+    <!-- test background  -->
+    	<!--Start Background Animation Body-->
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--End Background Animation Body-->
     <!-- setting the grid -->
     <div class="grid text-3xl  place-content-center font-extrabold">UcupMood</div>
     <div class="grid text-xs place-content-center">"Your" Daily Emotion Tracker Web-App</div>
