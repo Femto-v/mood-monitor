@@ -6,7 +6,7 @@ import MainPage from './components/MainPage.vue'
 <template>
   <HeaderPage/>
   <!-- setting background -->
-  <div class=" font-mono bg-orange-200">
+  <div class=" font-mono ">
     <!-- setting margin -->
     <MainPage msg="Vite + Vue" />
   </div>
