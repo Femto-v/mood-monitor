@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HeaderPage from "./components/HeaderPage.vue";
-import MainPage from "./views/home/MainPage.vue";
+import MainPage from "./views/MainPage.vue";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import MainPage from "./views/home/MainPage.vue";
     <!-- setting background -->
     <div class="font-mono">
         <!-- setting margin -->
-        <mainPage />
+        <MainPage />
     </div>
 </template>
 
