@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import HeaderPage from "./components/HeaderPage.vue";
 import MainPage from "./views/MainPage.vue";
+import ExplanationPage from "./views/ExplanationPage.vue";
 </script>
 
 <template>
     <HeaderPage />
     <!-- setting background -->
-    <div class="font-mono">
-        <!-- setting margin -->
+    <div class="grid">
         <MainPage />
+        <ExplanationPage />
     </div>
 </template>
 
