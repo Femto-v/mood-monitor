@@ -2,6 +2,7 @@
 import HeaderPage from "./components/HeaderPage.vue";
 import MainPage from "./views/MainPage.vue";
 import ExplanationPage from "./views/ExplanationPage.vue";
+import ReviewPage from "./views/ReviewPage.vue";
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import ExplanationPage from "./views/ExplanationPage.vue";
     <div class="grid">
         <MainPage />
         <ExplanationPage />
+        <ReviewPage />
     </div>
 </template>
 
