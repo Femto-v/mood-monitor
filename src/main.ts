@@ -1,17 +1,13 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-// OhVueIcon import
-import { OhVueIcon, addIcons } from "oh-vue-icons";
-// spesific icon can be more than 2 
-import { BiArrowDownCircle } from "oh-vue-icons/icons";
-// addIcons spesific icon can be more than 2 
-addIcons(BiArrowDownCircle);
+import { OhVueIcon, addIcons } from "oh-vue-icons";// OhVueIcon import
+import { BiArrowDownCircle } from "oh-vue-icons/icons";// spesific icon can be more than 2 
+
+addIcons(BiArrowDownCircle);// addIcons spesific icon can be more than 2 
 
 const app = createApp(App);
 
-// OhVueIcon 
-app.component("v-icon", OhVueIcon);
+app.component("v-icon", OhVueIcon);// OhVueIcon 
 
-// mount app
-app.mount('#app')
+app.mount('#app')// mount app
