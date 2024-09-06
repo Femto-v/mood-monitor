@@ -1,5 +1,15 @@
-<script setup lang="ts">
+<script lang="ts">
 import "../css/background-animation.css";
+import { defineComponent } from "vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+
+export default defineComponent({
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+});
 </script>
 
 <template>
@@ -35,9 +45,48 @@ import "../css/background-animation.css";
             </div>
         </div>
 
-        <div class="relative h-32 bg-black">
-            <div class="absolute w-full h-full flex items-center bg-orange-100">
+        <div class="relative h-64">
+            <div class="absolute w-full h-full flex items-center">
                 <!-- some pic  -->
+                <swiper
+                    direction="vertical"
+                    mousewheel
+                    style="height: 100%"
+                    :slides-per-view="1"
+                    :autoplay="{
+                        delay: 1500,
+                        disableOnInteraction: false,
+                    }"
+                >
+                    <swiper-slide>
+                        <img
+                            class="carousel-img"
+                            src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel1.jpeg"
+                            alt="Image 1"
+                        />
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img
+                            class="carousel-img"
+                            src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg"
+                            alt="Image 2"
+                        />
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img
+                            class="carousel-img"
+                            src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg"
+                            alt="Image 3"
+                        />
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img
+                            class="carousel-img"
+                            src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg"
+                            alt="Image 4"
+                        />
+                    </swiper-slide>
+                </swiper>
             </div>
         </div>
 
@@ -55,4 +104,10 @@ import "../css/background-animation.css";
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.carousel-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+</style>
