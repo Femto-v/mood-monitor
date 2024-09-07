@@ -45,7 +45,7 @@ export default defineComponent({
             </div>
         </div>
 
-        <div class="relative h-64">
+        <div class="relative h-64 m-3">
             <div class="absolute w-full h-full flex items-center">
                 <!-- some pic  -->
                 <swiper
@@ -57,6 +57,7 @@ export default defineComponent({
                         delay: 1500,
                         disableOnInteraction: false,
                     }"
+                    class="rounded"
                 >
                     <swiper-slide>
                         <img
