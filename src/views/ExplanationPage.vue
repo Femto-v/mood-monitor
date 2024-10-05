@@ -3,9 +3,9 @@
 <template>
     <!-- wallpaper -->
     <div class="bg-orange-300">
-        <div class="grid p-3 gap-5">
-            <!-- track your emotion daily -->
-            <div>
+        <div class="grid p-3 gap-8">
+            <!-- 1st -->
+            <div class="grid gap-3">
                 <div class="font-bold text-2xl">Track your emotion daily</div>
                 <div class="">At least you know how is your mood changing</div>
                 <img
@@ -14,7 +14,8 @@
                     class="w-full max-w-72 rounded"
                 />
             </div>
-            <div>
+            <!-- 2nd -->
+            <div class="grid gap-3">
                 <div class="font-bold text-2xl">Organize your "stress"</div>
                 <div class="">
                     you can try to review the main reason you are not in the
